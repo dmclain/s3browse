@@ -8,4 +8,4 @@ def home(request):
         for key in bucket.objects.all():
             keys.append(key.key)
 
-    return HttpResponse("<html><body>%s</body></html>" % "<br/>".join(keys))
+    return HttpResponse("<html><body><b>%s</b></body></html>" % "<br/>".join(keys))
